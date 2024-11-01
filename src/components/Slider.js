@@ -1,5 +1,5 @@
 import React from 'react';
-import all from '../assets/all.png';
+import silvir from '../assets/silvir.jpg';
 import red from '../assets/red.png';
 import slide3 from '../assets/slide3.png';
 
@@ -8,7 +8,7 @@ function Slider() {
     <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={all} className="d-block w-100" alt="..."/>
+      <img src={silvir} className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
       <img src={red} className="d-block w-100" alt="..."/>
