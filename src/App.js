@@ -1,5 +1,7 @@
+import React from 'react'
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
+import Entrance from './components/Entrance';
 
 
 function App() {
@@ -7,6 +9,7 @@ function App() {
     <>
    <Navbar/>
    <Slider/>
+   <Entrance/>
 
    </>
   );
