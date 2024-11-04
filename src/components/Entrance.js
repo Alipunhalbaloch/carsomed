@@ -1,6 +1,8 @@
 import React from "react";
 import "./css/entrance.css";
 import myImage from '../assets/sv.webp';
+import logo from '../assets/wrench-adjustable.svg';
+import price from '../assets/fixed-price--my.a6bbeac.svg';
 function Entrance() {
 
   const divStyle = {
@@ -33,21 +35,22 @@ function Entrance() {
         <div className="col-lg-9">
             <div className="search-container">
                 <h3>Buy a Car</h3>
-                <input type="text" className="form-control mb-3" placeholder="Search for cars by Brand, Model, or Keywords"/>
+                 <input type="text" className="form-control mb-3" placeholder="Search for cars by Brand, Model, or Keywords"/>
+                
                 
                 
                 <div className="row text-center">
                     <div className="col-md-3" style={divStyle}>
-                        <div className="">SUV/MPV</div>
+                        <div className="card-category" style={{color: 'red'}}>SUV/MPV</div>
                     </div>
                     <div className="col-md-3" style={divStyle}>
-                        <div className="card-category category-orange">Affordable Rides</div>
+                        <div className="card-category" style={{color: 'red'}}>Affordable Rides</div>
                     </div>
                     <div className="col-md-3" style={divStyle}>
-                        <div className="card-category category-red">Local Heroes</div>
+                        <div className="card-category " style={{color: 'red'}}>Local Heroes</div>
                     </div>
                     <div className="col-md-3" style={divStyle}>
-                        <div className="card-category category-blue">Best Value</div>
+                        <div className="card-category" style={{color: 'red'}}>Best Value</div>
                     </div>
                 </div>
                 
@@ -93,16 +96,20 @@ function Entrance() {
         </div>
 
         
-        <div className="col-lg-3">
+        <div className="col-lg-3" >
             <h3>Sell Your Car</h3>
-            <div className="sidebar-option">Sell Car</div>
-            <div className="sidebar-option">Get Car Price</div>
+            <div className="sidebar-option" style={{backgroundColor:'#EB8317'}}>
+            <img src={price} alt="Logo"
+                style={{ width: "20px", height: "20px", verticalAlign: "middle" }}
+                        />
+                        Sell Car</div>
+            <div className="sidebar-option" style={{backgroundColor:'#10375C'}}>Get Car Price</div>
 
            
-            <div className="info-box mt-3">30-45 Min Inspection Time</div>
+            <div className="info-box mt-3"><img src={logo} alt="Logo" style={{width: '20px', height: '20px' ,verticalAlign: "middle" }}/>30-45 Min Inspection Time</div>
             <div className="info-box">No Paperwork Hassle</div>
             <div className="info-box">Get paid securely without delay</div>
-
+           
            
             <div className="info-box bg-light mt-3">
                 Trade-in for an extra RM1,500 OFF*
